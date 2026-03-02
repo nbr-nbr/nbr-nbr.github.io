@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GameProfile</title>
+
+  <style>
+    body {
+      background-color: #14181c;
+      color: white;
+      font: Impact;
+      margin: 0;
+    }
+
+    .perfil {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .perfil img {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    .bio {
+      color: #9ab;
+    }
+
+    .jogos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .jogo {
+      background-color: #1c2329;
+      padding: 10px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .jogo:hover {
+      transform: scale(1.05);
+      background-color: #4d4457;
+    }
+
+    .jogo img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .nota {
+      color: #00e054;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="perfil">
+    <img src="images/batata.jpeg">
+    <h1>GameProfile de: Jp</h1>
+    <p class="bio">Amante de jogos indie e gameplays viciantes </p>
+  </div>
+
+  <div class="jogos">
+
+    <div class="jogo">
+      <img src="images/hollow knight.png" alt="Capa do jogo">
+      <h3>Hollow Knight</h3>
+      <div class="nota">★★★★★</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/ER.jpg" alt="Capa do jogo">
+      <h3>Elden Ring</h3>
+      <div class="nota">★★★★★</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/OW.jpg" alt="Capa do jogo">
+      <h3>Outer Wilds</h3>
+      <div class="nota">★★★★★</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/RE4.png" alt="Capa do jogo">
+      <h3>Resident Evil 4 </h3>
+      <div class="nota">★★★★★</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/Zelda.png" alt="Capa do jogo">
+      <h3>Zelda BOTW</h3>
+      <div class="nota">★★★★★</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/Fnf.jpg" alt="Capa do jogo">
+      <h3>FNF</h3>
+      <div class="nota">★★★★☆</div>
+    </div>
+
+    <div class="jogo">
+      <img src="images/HKS.jpg" alt="Capa do jogo">
+      <h3>HK: Silksong</h3>
+      <div class="nota">★★★★★</div>
+    </div>
+  </div>
+
+</body>
+</html>
