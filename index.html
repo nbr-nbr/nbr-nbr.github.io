@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>???</title>
+
+  <style>
+    body {
+      background-color: #14181c;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    #msg {
+      display: none;
+      color: rgb(85, 6, 4);
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <video id="video" width="1000" controls>
+    <source src="images/teste.mp4" type="video/mp4">
+  </video>
+
+  <div id="msg">
+    Você não está autorizado a ver isso.
+  </div>
+
+  <script>
+    const video = document.getElementById("video");
+    
+    const msg = document.getElementById("msg");
+
+    video.addEventListener("ended", () => {
+      video.style.display = "none";
+      msg.style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
